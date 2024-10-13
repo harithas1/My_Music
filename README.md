@@ -5,27 +5,22 @@ This project is a simple music player application that allows users to select an
 ## Table of Contents
 - [Features](#features)
 - [Technologies](#technologies)
-- [Code Overview](#code-overview)
-  - [JavaScript Functionality](#javascript-functionality)
-  - [HTML Structure](#html-structure)
-- [Setup and Usage](#setup-and-usage)
-- [License](#license)
+- [Project links](#project-links)
+
+
 
 ## Features
 - **Song Selection**: Users can click on song titles to play the selected song.
 - **Play/Pause Control**: A play/pause button to control the audio playback.
-- **Responsive Design**: The layout adjusts for different screen sizes.
+
 
 ## Technologies
 - **HTML**: Structure of the application.
 - **CSS**: Styling of the application (linked as `style.css`).
 - **JavaScript**: Functionality of the application (linked as `main.js`).
 
-## Code Overview
 
-### JavaScript Functionality
-The JavaScript code handles song selection and audio playback.
+## Project links
+- [GitHub Repository](https://github.com/harithas1/My_Music.git)
 
-- **Audio Element**: The `<audio>` element is selected using its ID:
-  ```javascript
-  const mySong = document.getElementById("mySong");
+- [Live Demo](https://harithas1.github.io/My_Music/) 
