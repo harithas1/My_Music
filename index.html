@@ -1,55 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
+      <div class="navbar">
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Specifications</a>
+          <a href="#">Products</a>
+          <a href="#">Connect</a>
+        </nav>
+      </div>
 
-        <div class="navbar">
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Specifications</a>
-                <a href="#">Products</a>
-                <a href="#">Connect</a>
-            </nav>
-        </div>
-
-        <div class="left-col">
-            <h1>BEAT<br> RHYTM <br> FLOW</h1>
-        </div>
-        <div class="right-col">
+      <div class="main">
+        <div class="leftmain">
+          <div class="left-col">
+            <h1>
+              BEAT<br />
+              RHYTM <br />
+              FLOW
+            </h1>
+          </div>
+          <div class="right-col">
             <p>Click here to listen</p>
-            <i id="icon" class="fa-regular fa-circle-play"></i>            
+            <img id="icon" src="circle-play-regular.svg" alt="" />
+          </div>
+
+          <audio id="mySong">
+            <source
+              class="defaultSong"
+              src="/home/jtd/Downloads/Freedom cheppindi welcome.mp3"
+              type="audio/mp3"
+            />
+          </audio>
         </div>
 
-    </div>
-
-    <audio id="mySong">
-        <source src="/home/jtd/Downloads/Butta Bomma Flute BGM.mp3" type="audio/mp3">
-    </audio>
-
-    <div class="songsList">
-        <h2>Select Song</h2>
-        <a href="#" class="song" data-src="Freedom.mp3">Freedom cheppindi welcome</a><br>
-        <a href="#" class="song" data-src="Butta Bomma Flute BGM.mp3">Butta bomma bgm</a><br>
-        <a href="#" class="song" data-src="Baguntundi.mp3">Baguntundi</a><br>
-        <a href="#" class="song" data-src="Butta Bomma Flute BGM.mp3">Ee rathale</a><br>
-        <a href="#" class="song" data-src="[iSongs.info] 01 - Omkareswari.mp3">Omkareshwari</a><br>
-        <a href="#" class="song" data-src="[iSongs.info] 01 - You Rock My World.mp3">You rock my world</a><br>
-        <a href="#" class="song" data-src="[iSongs.info] 01 - You Rock My World.mp3">Sittharala Sithravathi</a><br>
-        <a href="#" class="song" data-src="Kotthaga Kotthaga - SenSongsMp3.Com.mp3">Kotthaga Kothhaga</a><br>
-        <a href="#" class="song" data-src="Ninnu Choodagane.mp3">Ninnu choodagane</a><br>
-        <a href="#" class="song" data-src="Meghale Takindi - SenSongsMp3.Co.mp3">Meghale thakindi</a><br>
-
+        <div class="songsList">
+          <h2>Select Song</h2>
+          <div class="songsdiv">
+            <br><br>
+            <a href="#" class="song" data-src="Freedom.mp3"
+              >Freedom cheppindi welcome</a
+            ><br />
+            <a href="#" class="song" data-src="Butta Bomma Flute BGM.mp3"
+              >Butta bomma bgm</a
+            ><br />
+            <a href="#" class="song" data-src="Baguntundi.mp3">Baguntundi</a
+            ><br />
+            <a href="#" class="song" data-src="Butta Bomma Flute BGM.mp3"
+              >Ee rathale</a
+            ><br />
+            <a
+              href="#"
+              class="song"
+              data-src="[iSongs.info] 01 - Omkareswari.mp3"
+              >Omkareshwari</a
+            ><br />
+            <a
+              href="#"
+              class="song"
+              data-src="[iSongs.info] 01 - You Rock My World.mp3"
+              >You rock my world</a
+            ><br />
+            <a
+              href="#"
+              class="song"
+              data-src="[iSongs.info] 01 - You Rock My World.mp3"
+              >Sittharala Sithravathi</a
+            ><br />
+            <a
+              href="#"
+              class="song"
+              data-src="Kotthaga Kotthaga - SenSongsMp3.Com.mp3"
+              >Kotthaga Kothhaga</a
+            ><br />
+            <a href="#" class="song" data-src="Ninnu Choodagane.mp3"
+              >Ninnu choodagane</a
+            ><br />
+            <a
+              href="#"
+              class="song"
+              data-src="Meghale Takindi - SenSongsMp3.Co.mp3"
+              >Meghale thakindi</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

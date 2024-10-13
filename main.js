@@ -9,16 +9,16 @@ songs.forEach(song => {
         source.src = this.getAttribute("data-src");
         mySong.load(); // Load the new source
         mySong.play();
-        icon.className = "fa-solid fa-circle-pause";
+        icon.src = "circle-pause-regular.svg";
     });
 });
 
 icon.addEventListener("click", function(){
     if(mySong.paused){
         mySong.play();
-        icon.className = "fa-solid fa-circle-pause";
+        icon.src = "circle-pause-regular.svg";
     } else {
         mySong.pause();
-        icon.className = "fa-regular fa-circle-play";         
+        icon.src = "circle-play-regular.svg";         
     }   
 });
